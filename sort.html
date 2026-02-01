@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer // Shreyansh Tanwar</title>
+    <link rel="stylesheet" href="sort.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <div class="logo-area">
+                <h1>SORT_VISUALIZER</h1>
+                <p>Made by - Shreyansh Tanwar</p>
+                <p>Linkedin - shreyansh-tanwar-0577011b4</p>
+            </div>
+            
+            <div class="controls">
+                <div class="input-group">
+                    <label>ALGORITHM</label>
+                    <select id="algoSelect">
+                        <option value="bubble">Bubble Sort</option>
+                        <option value="selection">Selection Sort</option>
+                        <option value="insertion">Insertion Sort</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>SPEED</label>
+                    <input type="range" id="speed" min="1" max="200" value="150">
+                </div>
+
+                <div class="button-group">
+                    <button id="resetBtn">NEW ARRAY</button>
+                    <button id="runBtn" class="primary-btn">VISUALIZE</button>
+                </div>
+            </div>
+        </header>
+
+        <div id="visualizer"></div>
+
+        <div id="details-container">
+            <h2 id="algo-title">Bubble Sort</h2>
+            <div class="stats">
+                <span id="time-complexity">Time: O(n²)</span> | 
+                <span id="space-complexity">Space: O(1)</span>
+            </div>
+            <p id="algo-description">
+                Bubble Sort is a simple comparison-based algorithm. It repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.
+            </p>
+        </div>
+    </div>
+
+    <script src="sort.js"></script>
+</body>
+</html>
